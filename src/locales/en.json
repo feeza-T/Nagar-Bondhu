@@ -1,0 +1,369 @@
+{
+  "brand": {
+    "name": "NagarBondhu"
+  },
+  "common": {
+    "wait": "Please wait…",
+    "close": "Close",
+    "all": "All"
+  },
+  "nav": {
+    "home": "Home",
+    "impact": "Impact",
+    "features": "Features",
+    "how": "How it works",
+    "services": "Services",
+    "projects": "Projects",
+    "report": "Report a problem",
+    "login": "Login",
+    "signup": "Sign up",
+    "profile": "Profile",
+    "logout": "Logout",
+    "menu": "Menu",
+    "adminDashboard": "Admin Dashboard",
+    "workerDashboard": "Worker Dashboard"
+  },
+  "roles": {
+    "citizen": "Citizen",
+    "worker": "Worker",
+    "admin": "Admin"
+  },
+  "areas": {
+    "Dhaka": "Dhaka",
+    "Chattogram": "Chattogram",
+    "Khulna": "Khulna",
+    "Rajshahi": "Rajshahi",
+    "Sylhet": "Sylhet",
+    "Barishal": "Barishal",
+    "Rangpur": "Rangpur"
+  },
+  "status": {
+    "pending": "Pending review",
+    "confirmed": "Confirmed",
+    "campaign": "Campaign scheduled",
+    "cleaned": "Cleaned",
+    "rejected": "Rejected",
+    "open": "Open for volunteers",
+    "completed": "Completed"
+  },
+  "hero": {
+    "badge": "Community-powered cleanliness",
+    "title1": "Your city.",
+    "title2": "Your clean-up.",
+    "desc": "Spot waste, snap a photo, and send it in. We confirm it, call volunteers together, and clean it up as a team — you watch it happen.",
+    "cta1": "Report a problem",
+    "cta2": "See how it works",
+    "cardText": "Clean city together",
+    "chip": "Reports cleaned this week: 214"
+  },
+   "impact": {
+    "eyebrow": "Our growing impact",
+    "heading1": "Better neighbourhoods,",
+    "heading2": "brighter futures.",
+    "intro": "Every report, every helping hand, and every cleanup brings us one step closer to cleaner, happier communities.",
+    "resolved": "Problems cleaned",
+    "volunteers": "Active volunteers",
+    "campaigns": "Campaigns held",
+    "districts": "Districts covered",
+    "chip": "Small actions matter",
+    "bottom": "A cleaner city starts with all of us."
+  },
+  "features": {
+    "title": "Built for people who want a cleaner neighbourhood",
+    "report": {
+      "title": "Report in a minute",
+      "desc": "Upload a photo, choose the area and describe the problem. Only logged-in citizens can submit, so every report has a real person behind it."
+    },
+    "verify": {
+      "title": "Admin verified",
+      "desc": "Admins review each report and confirm it before any action is taken."
+    },
+    "campaign": {
+      "title": "Team campaigns",
+      "desc": "One confirmed report becomes a scheduled campaign with a date and meeting point."
+    },
+    "map": {
+      "title": "Hotspot map",
+      "desc": "See which areas are dirtiest and where help is needed next."
+    },
+    "team": {
+      "title": "Volunteer teams",
+      "desc": "Workers join the campaigns they can attend and mark their part as done."
+    },
+    "bangla": {
+      "title": "Bangla & English",
+      "desc": "Switch language at any time. Every page works in both."
+    }
+  },
+  "how": {
+    "title": "How a report becomes a clean street",
+    "imageSlot": "Image goes here",
+    "report": {
+      "title": "A citizen reports",
+      "desc": "Log in, upload a photo and describe where the waste is."
+    },
+    "confirm": {
+      "title": "Admin confirms",
+      "desc": "The admin checks the report and confirms that it is real."
+    },
+    "campaign": {
+      "title": "A campaign is called",
+      "desc": "The admin sets a date, time and meeting point and asks all volunteers to join."
+    },
+    "join": {
+      "title": "Volunteers join",
+      "desc": "Workers see the call, join the campaign and meet on the day."
+    },
+    "clean": {
+      "title": "Cleaned and shown as done",
+      "desc": "Volunteers mark their part done, the admin closes the campaign and the citizen sees the success."
+    }
+  },
+  "services": {
+    "title": "Three ways to help your city",
+    "citizen": {
+      "title": "Report",
+      "desc": "For residents who see a problem.",
+      "p1": "Photo and location report",
+      "p2": "Track progress step by step",
+      "p3": "See it marked as cleaned",
+      "cta": "Report a problem"
+    },
+    "community": {
+      "title": "Volunteer",
+      "desc": "For people who want to get their hands dirty.",
+      "p1": "Get campaign calls",
+      "p2": "Join with one tap",
+      "p3": "Mark your part as done",
+      "cta": "Join as a worker"
+    },
+    "city": {
+      "title": "Manage",
+      "desc": "For admins coordinating the work.",
+      "p1": "Review and confirm reports",
+      "p2": "Schedule team campaigns",
+      "p3": "Close campaigns when done",
+      "cta": "Open dashboard"
+    }
+  },
+  "projects": {
+    "title": "Community impact",
+    "desc": "A few of the places neighbours cleaned together.",
+    "p1": {
+      "title": "Buriganga riverbank",
+      "place": "Dhaka"
+    },
+    "p2": {
+      "title": "School gate",
+      "place": "Rajshahi"
+    },
+    "p3": {
+      "title": "Market lane",
+      "place": "Sylhet"
+    },
+    "p4": {
+      "title": "Drain clearing day",
+      "place": "Chattogram"
+    },
+    "p5": {
+      "title": "Park restoration",
+      "place": "Rangpur"
+    },
+    "p6": {
+      "title": "Ferry ghat clean-up",
+      "place": "Khulna"
+    },
+    "p7": {
+      "title": "Neighbourhood weekend drive",
+      "place": "Barishal"
+    }
+  },
+  "testimonials": {
+    "title": "What people say",
+    "t1": {
+      "text": "I reported a blocked drain on Monday. By Saturday thirty neighbours had cleared it together.",
+      "name": "Rahim Uddin",
+      "role": "Citizen, Dhaka"
+    },
+    "t2": {
+      "text": "The campaign call shows the date and place clearly. I join in one tap and know exactly where to go.",
+      "name": "Salma Akter",
+      "role": "Volunteer worker, Khulna"
+    },
+    "t3": {
+      "text": "I can confirm reports and organise a whole team in minutes instead of calling people one by one.",
+      "name": "Nusrat Jahan",
+      "role": "Admin, Chattogram"
+    }
+  },
+  "cta": {
+    "title": "Ready for a cleaner city?",
+    "desc": "Create a free account and report your first problem, or sign up as a volunteer.",
+    "primary": "Create an account",
+    "secondary": "Report a problem"
+  },
+  "footer": {
+    "about": "NagarBondhu — the city friend that connects citizens, volunteers and administrators to keep neighbourhoods clean.",
+    "explore": "Explore",
+    "getInvolved": "Get involved",
+    "rights": "© 2026 NagarBondhu. All rights reserved."
+  },
+  "auth": {
+    "panelTitle": "Be the city's friend",
+    "panelDesc": "Report waste, join clean-up campaigns and see your neighbourhood change.",
+    "back": "Back to home",
+    "loginTitle": "Login",
+    "loginSub": "Welcome back. Log in to continue.",
+    "email": "Email",
+    "password": "Password",
+    "loginBtn": "Login",
+    "or": "OR",
+    "socialSoon": "Social login will be available after Supabase is connected.",
+    "demoTitle": "Demo mode: try a role",
+    "demoHint": "One tap, no password. Demo accounts use password demo1234.",
+    "noAccount": "No account yet?",
+    "terms": "By continuing you agree to our Terms of Service and Privacy Policy.",
+    "show": "Show password",
+    "hide": "Hide password",
+    "signupTitle": "Sign up",
+    "signupSub": "Create your free account in a minute.",
+    "name": "Full name",
+    "phone": "Phone number",
+    "confirm": "Confirm password",
+    "iAm": "I am a",
+    "signupBtn": "Create account",
+    "haveAccount": "Already have an account?",
+    "mismatch": "Passwords do not match.",
+    "invalid": "Email or password is incorrect.",
+    "emailTaken": "This email is already registered."
+  },
+  "report": {
+    "title": "Report a problem",
+    "desc": "Tell us where the waste is. A short description and one clear photo help the admin confirm it faster.",
+    "loginRequired": "Please log in or sign up to submit a report. You can still look around the site.",
+    "fTitle": "Short title",
+    "fTitlePh": "e.g. Overflowing bins near the market",
+    "fCategory": "Problem type",
+    "fArea": "District",
+    "fLocation": "Exact location",
+    "fLocationPh": "Street, landmark or nearby shop",
+    "fDesc": "Description",
+    "fDescPh": "What is the problem and for how long has it been there?",
+    "fPhoto": "Photo (optional)",
+    "photoAlt": "Photo of the reported waste",
+    "removePhoto": "Remove photo",
+    "upload": "Tap to upload a photo",
+    "submit": "Submit report",
+    "thanks": "Report sent!",
+    "thanksDesc": "The admin will review it soon. You can follow its progress in your profile.",
+    "track": "Track my reports",
+    "another": "Report another problem",
+    "badImage": "Please choose an image file.",
+    "cat": {
+      "overflow": "Overflowing bin",
+      "dumping": "Illegal dumping",
+      "drain": "Blocked drain",
+      "hazard": "Hazardous waste",
+      "other": "Other"
+    }
+  },
+  "campaign": {
+    "noReport": "Could not find that item."
+  },
+  "user": {
+    "myReports": "My reports",
+    "empty": "You have not reported anything yet.",
+    "rejectedNote": "This report was not accepted by the admin.",
+    "step": {
+      "pending": "Sent",
+      "confirmed": "Confirmed",
+      "campaign": "Campaign set",
+      "cleaned": "Cleaned"
+    },
+    "campaignInfo": "Clean-up campaign planned for {{date}} at {{time}}. Volunteers have been called.",
+    "cleanedInfo": "Cleaned! {{n}} volunteers finished this clean-up. Thank you for reporting."
+  },
+  "dash": {
+    "overview": "Overview",
+    "reports": "Reports",
+    "campaigns": "Campaigns",
+    "adminTitle": "Admin panel",
+    "workerTitle": "Worker panel",
+    "backToSite": "Back to website",
+    "welcome": "Welcome back, {{name}}"
+  },
+  "admin": {
+    "title": "Admin dashboard",
+    "sub": "Review reports, call volunteers and close campaigns.",
+    "sTotal": "Total reports",
+    "sPending": "Waiting for review",
+    "sCampaigns": "Active campaigns",
+    "sCleaned": "Cleaned",
+    "needsReview": "{{n}} report(s) are waiting for your review",
+    "reviewNow": "Review now",
+    "recent": "Recent reports",
+    "viewAll": "View all",
+    "colReport": "Report",
+    "colArea": "District",
+    "colDate": "Date",
+    "colStatus": "Status",
+    "workers": "Worker overview",
+    "workerStats": "{{joined}} joined · {{done}} completed",
+    "reportsTitle": "Waste reports",
+    "reportsSub": "Confirm real problems, then create a campaign for each.",
+    "noReports": "No reports in this list.",
+    "noPhoto": "No photo",
+    "by": "By {{name}}",
+    "confirm": "Confirm",
+    "reject": "Reject",
+    "createCampaign": "Create campaign",
+    "viewCampaign": "View campaign",
+    "cTitle": "Campaign title",
+    "cDate": "Date",
+    "cTime": "Start time",
+    "cMeeting": "Meeting point",
+    "cNeeded": "Volunteers needed",
+    "cNote": "Message to volunteers",
+    "cNotePh": "e.g. Bring gloves. Bags will be provided.",
+    "publishCampaign": "Publish and call volunteers",
+    "campaignsTitle": "Campaigns",
+    "campaignsSub": "Watch volunteers join and finish, then close the campaign.",
+    "noCampaigns": "No campaigns yet. Confirm a report, then create one.",
+    "volunteers": "Volunteers",
+    "noVolunteers": "Nobody has joined yet.",
+    "completeCampaign": "Mark campaign as completed",
+    "campaignDone": "Completed with {{n}} volunteers",
+    "waitDone": "Available once at least one volunteer marks their part done."
+  },
+  "worker": {
+    "title": "Worker dashboard",
+    "sub": "Join clean-up campaigns and mark your tasks done.",
+    "sCalls": "New campaign calls",
+    "sPending": "My pending tasks",
+    "sDone": "Tasks completed",
+    "callsTitle": "Volunteers needed",
+    "noCalls": "No open calls right now. Check back soon.",
+    "activity": "My recent activity",
+    "noActivity": "You have not joined any campaign yet.",
+    "spots": "{{joined}} of {{needed}} volunteers",
+    "thanks": "Campaign completed. Thank you!",
+    "campaignClosed": "This campaign is completed.",
+    "full": "Team is full",
+    "join": "Join this campaign",
+    "myPartDone": "You marked your part as done",
+    "markDone": "Mark my part done",
+    "leave": "Leave",
+    "campaignsTitle": "Campaigns",
+    "campaignsSub": "All clean-up days organised by the admin.",
+    "tab": {
+      "open": "Open",
+      "mine": "My campaigns",
+      "completed": "Completed"
+    },
+    "noCampaigns": "Nothing to show here."
+  },
+  "notFound": {
+    "text": "This page could not be found.",
+    "back": "Back to home"
+  }
+}

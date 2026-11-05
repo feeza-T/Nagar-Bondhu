@@ -1,0 +1,369 @@
+{
+  "brand": {
+    "name": "নগর বন্ধু"
+  },
+  "common": {
+    "wait": "অপেক্ষা করুন…",
+    "close": "বন্ধ করুন",
+    "all": "সব"
+  },
+  "nav": {
+    "home": "হোম",
+    "impact": "প্রভাব",
+    "features": "বৈশিষ্ট্য",
+    "how": "কীভাবে কাজ করে",
+    "services": "সেবা",
+    "projects": "প্রকল্প",
+    "report": "সমস্যা জানান",
+    "login": "লগইন",
+    "signup": "সাইন আপ",
+    "profile": "প্রোফাইল",
+    "logout": "লগআউট",
+    "menu": "মেনু",
+    "adminDashboard": "অ্যাডমিন ড্যাশবোর্ড",
+    "workerDashboard": "ওয়ার্কার ড্যাশবোর্ড"
+  },
+  "roles": {
+    "citizen": "নাগরিক",
+    "worker": "ওয়ার্কার",
+    "admin": "অ্যাডমিন"
+  },
+  "areas": {
+    "Dhaka": "ঢাকা",
+    "Chattogram": "চট্টগ্রাম",
+    "Khulna": "খুলনা",
+    "Rajshahi": "রাজশাহী",
+    "Sylhet": "সিলেট",
+    "Barishal": "বরিশাল",
+    "Rangpur": "রংপুর"
+  },
+  "status": {
+    "pending": "যাচাই বাকি",
+    "confirmed": "নিশ্চিত",
+    "campaign": "ক্যাম্পেইন নির্ধারিত",
+    "cleaned": "পরিষ্কার হয়েছে",
+    "rejected": "বাতিল",
+    "open": "স্বেচ্ছাসেবী প্রয়োজন",
+    "completed": "সম্পন্ন"
+  },
+  "hero": {
+    "badge": "জনগণের শক্তিতে পরিচ্ছন্নতা",
+    "title1": "আপনার শহর।",
+    "title2": "আপনার পরিচ্ছন্নতা।",
+    "desc": "ময়লা দেখলে ছবি তুলে জানান। আমরা যাচাই করব, স্বেচ্ছাসেবীদের ডাকব এবং একসাথে পরিষ্কার করব।",
+    "cta1": "সমস্যা জানান",
+    "cta2": "কীভাবে কাজ করে দেখুন",
+    "cardText": "একসাথে পরিচ্ছন্ন শহর",
+    "chip": "Reports cleaned this week: 214"
+  },
+   "impact": {
+    "eyebrow": "আমাদের ক্রমবর্ধমান প্রভাব",
+    "heading1": "উন্নত পাড়া-মহল্লা,",
+    "heading2": "উজ্জ্বল ভবিষ্যৎ।",
+    "intro": "প্রতিটি রিপোর্ট, প্রতিটি সাহায্যের হাত এবং প্রতিটি পরিচ্ছন্নতা অভিযান আমাদের আরও পরিচ্ছন্ন ও সুখী সমাজের দিকে একধাপ এগিয়ে নেয়।",
+    "resolved": "সমাধান হওয়া সমস্যা",
+    "volunteers": "সক্রিয় স্বেচ্ছাসেবী",
+    "campaigns": "ক্যাম্পেইন",
+    "districts": "জেলা",
+    "chip": "ছোট পদক্ষেপও গুরুত্বপূর্ণ",
+    "bottom": "পরিচ্ছন্ন শহর শুরু হয় আমাদের সবার হাত ধরে।"
+  },
+  "features": {
+    "title": "Built for people who want a cleaner neighbourhood",
+    "report": {
+      "title": "Report in a minute",
+      "desc": "Upload a photo, choose the area and describe the problem. Only logged-in citizens can submit, so every report has a real person behind it."
+    },
+    "verify": {
+      "title": "Admin verified",
+      "desc": "Admins review each report and confirm it before any action is taken."
+    },
+    "campaign": {
+      "title": "Team campaigns",
+      "desc": "One confirmed report becomes a scheduled campaign with a date and meeting point."
+    },
+    "map": {
+      "title": "Hotspot map",
+      "desc": "See which areas are dirtiest and where help is needed next."
+    },
+    "team": {
+      "title": "Volunteer teams",
+      "desc": "Workers join the campaigns they can attend and mark their part as done."
+    },
+    "bangla": {
+      "title": "Bangla & English",
+      "desc": "Switch language at any time. Every page works in both."
+    }
+  },
+  "how": {
+    "title": "রিপোর্ট থেকে পরিষ্কার রাস্তা",
+    "imageSlot": "Image goes here",
+    "report": {
+      "title": "নাগরিক জানান",
+      "desc": "Log in, upload a photo and describe where the waste is."
+    },
+    "confirm": {
+      "title": "অ্যাডমিন নিশ্চিত করেন",
+      "desc": "The admin checks the report and confirms that it is real."
+    },
+    "campaign": {
+      "title": "ক্যাম্পেইন ডাকা হয়",
+      "desc": "The admin sets a date, time and meeting point and asks all volunteers to join."
+    },
+    "join": {
+      "title": "স্বেচ্ছাসেবীরা যোগ দেন",
+      "desc": "Workers see the call, join the campaign and meet on the day."
+    },
+    "clean": {
+      "title": "পরিষ্কার সম্পন্ন",
+      "desc": "Volunteers mark their part done, the admin closes the campaign and the citizen sees the success."
+    }
+  },
+  "services": {
+    "title": "Three ways to help your city",
+    "citizen": {
+      "title": "Report",
+      "desc": "For residents who see a problem.",
+      "p1": "Photo and location report",
+      "p2": "Track progress step by step",
+      "p3": "See it marked as cleaned",
+      "cta": "Report a problem"
+    },
+    "community": {
+      "title": "Volunteer",
+      "desc": "For people who want to get their hands dirty.",
+      "p1": "Get campaign calls",
+      "p2": "Join with one tap",
+      "p3": "Mark your part as done",
+      "cta": "Join as a worker"
+    },
+    "city": {
+      "title": "Manage",
+      "desc": "For admins coordinating the work.",
+      "p1": "Review and confirm reports",
+      "p2": "Schedule team campaigns",
+      "p3": "Close campaigns when done",
+      "cta": "Open dashboard"
+    }
+  },
+  "projects": {
+    "title": "Community impact",
+    "desc": "A few of the places neighbours cleaned together.",
+    "p1": {
+      "title": "Buriganga riverbank",
+      "place": "Dhaka"
+    },
+    "p2": {
+      "title": "School gate",
+      "place": "Rajshahi"
+    },
+    "p3": {
+      "title": "Market lane",
+      "place": "Sylhet"
+    },
+    "p4": {
+      "title": "Drain clearing day",
+      "place": "Chattogram"
+    },
+    "p5": {
+      "title": "Park restoration",
+      "place": "Rangpur"
+    },
+    "p6": {
+      "title": "Ferry ghat clean-up",
+      "place": "Khulna"
+    },
+    "p7": {
+      "title": "Neighbourhood weekend drive",
+      "place": "Barishal"
+    }
+  },
+  "testimonials": {
+    "title": "মানুষ কী বলছে",
+    "t1": {
+      "text": "I reported a blocked drain on Monday. By Saturday thirty neighbours had cleared it together.",
+      "name": "Rahim Uddin",
+      "role": "Citizen, Dhaka"
+    },
+    "t2": {
+      "text": "The campaign call shows the date and place clearly. I join in one tap and know exactly where to go.",
+      "name": "Salma Akter",
+      "role": "Volunteer worker, Khulna"
+    },
+    "t3": {
+      "text": "I can confirm reports and organise a whole team in minutes instead of calling people one by one.",
+      "name": "Nusrat Jahan",
+      "role": "Admin, Chattogram"
+    }
+  },
+  "cta": {
+    "title": "পরিচ্ছন্ন শহরের জন্য প্রস্তুত?",
+    "desc": "Create a free account and report your first problem, or sign up as a volunteer.",
+    "primary": "অ্যাকাউন্ট খুলুন",
+    "secondary": "সমস্যা জানান"
+  },
+  "footer": {
+    "about": "NagarBondhu — the city friend that connects citizens, volunteers and administrators to keep neighbourhoods clean.",
+    "explore": "Explore",
+    "getInvolved": "Get involved",
+    "rights": "© 2026 NagarBondhu. All rights reserved."
+  },
+  "auth": {
+    "panelTitle": "Be the city's friend",
+    "panelDesc": "Report waste, join clean-up campaigns and see your neighbourhood change.",
+    "back": "হোমে ফিরুন",
+    "loginTitle": "লগইন",
+    "loginSub": "স্বাগতম। চালিয়ে যেতে লগইন করুন।",
+    "email": "ইমেইল",
+    "password": "পাসওয়ার্ড",
+    "loginBtn": "লগইন",
+    "or": "অথবা",
+    "socialSoon": "Social login will be available after Supabase is connected.",
+    "demoTitle": "ডেমো মোড: একটি ভূমিকা বেছে নিন",
+    "demoHint": "One tap, no password. Demo accounts use password demo1234.",
+    "noAccount": "অ্যাকাউন্ট নেই?",
+    "terms": "By continuing you agree to our Terms of Service and Privacy Policy.",
+    "show": "Show password",
+    "hide": "Hide password",
+    "signupTitle": "সাইন আপ",
+    "signupSub": "এক মিনিটে বিনামূল্যে অ্যাকাউন্ট খুলুন।",
+    "name": "পূর্ণ নাম",
+    "phone": "ফোন নম্বর",
+    "confirm": "পাসওয়ার্ড নিশ্চিত করুন",
+    "iAm": "আমি একজন",
+    "signupBtn": "অ্যাকাউন্ট খুলুন",
+    "haveAccount": "আগে থেকেই অ্যাকাউন্ট আছে?",
+    "mismatch": "পাসওয়ার্ড মিলছে না।",
+    "invalid": "ইমেইল বা পাসওয়ার্ড ভুল।",
+    "emailTaken": "This email is already registered."
+  },
+  "report": {
+    "title": "সমস্যা জানান",
+    "desc": "Tell us where the waste is. A short description and one clear photo help the admin confirm it faster.",
+    "loginRequired": "রিপোর্ট জমা দিতে লগইন বা সাইন আপ করুন। ওয়েবসাইট ঘুরে দেখতে পারবেন।",
+    "fTitle": "সংক্ষিপ্ত শিরোনাম",
+    "fTitlePh": "e.g. Overflowing bins near the market",
+    "fCategory": "সমস্যার ধরন",
+    "fArea": "জেলা",
+    "fLocation": "সঠিক অবস্থান",
+    "fLocationPh": "Street, landmark or nearby shop",
+    "fDesc": "বিবরণ",
+    "fDescPh": "What is the problem and for how long has it been there?",
+    "fPhoto": "ছবি (ঐচ্ছিক)",
+    "photoAlt": "Photo of the reported waste",
+    "removePhoto": "Remove photo",
+    "upload": "ছবি আপলোড করতে ট্যাপ করুন",
+    "submit": "রিপোর্ট জমা দিন",
+    "thanks": "রিপোর্ট পাঠানো হয়েছে!",
+    "thanksDesc": "The admin will review it soon. You can follow its progress in your profile.",
+    "track": "আমার রিপোর্ট দেখুন",
+    "another": "Report another problem",
+    "badImage": "Please choose an image file.",
+    "cat": {
+      "overflow": "উপচে পড়া বিন",
+      "dumping": "অবৈধ ময়লা ফেলা",
+      "drain": "বন্ধ ড্রেন",
+      "hazard": "ঝুঁকিপূর্ণ বর্জ্য",
+      "other": "অন্যান্য"
+    }
+  },
+  "campaign": {
+    "noReport": "Could not find that item."
+  },
+  "user": {
+    "myReports": "আমার রিপোর্ট",
+    "empty": "You have not reported anything yet.",
+    "rejectedNote": "This report was not accepted by the admin.",
+    "step": {
+      "pending": "পাঠানো",
+      "confirmed": "নিশ্চিত",
+      "campaign": "ক্যাম্পেইন",
+      "cleaned": "পরিষ্কার"
+    },
+    "campaignInfo": "Clean-up campaign planned for {{date}} at {{time}}. Volunteers have been called.",
+    "cleanedInfo": "Cleaned! {{n}} volunteers finished this clean-up. Thank you for reporting."
+  },
+  "dash": {
+    "overview": "ওভারভিউ",
+    "reports": "রিপোর্ট",
+    "campaigns": "ক্যাম্পেইন",
+    "adminTitle": "Admin panel",
+    "workerTitle": "Worker panel",
+    "backToSite": "ওয়েবসাইটে ফিরুন",
+    "welcome": "স্বাগতম, {{name}}"
+  },
+  "admin": {
+    "title": "অ্যাডমিন ড্যাশবোর্ড",
+    "sub": "Review reports, call volunteers and close campaigns.",
+    "sTotal": "Total reports",
+    "sPending": "Waiting for review",
+    "sCampaigns": "Active campaigns",
+    "sCleaned": "Cleaned",
+    "needsReview": "{{n}} report(s) are waiting for your review",
+    "reviewNow": "Review now",
+    "recent": "Recent reports",
+    "viewAll": "View all",
+    "colReport": "Report",
+    "colArea": "District",
+    "colDate": "Date",
+    "colStatus": "Status",
+    "workers": "Worker overview",
+    "workerStats": "{{joined}} joined · {{done}} completed",
+    "reportsTitle": "ময়লার রিপোর্ট",
+    "reportsSub": "Confirm real problems, then create a campaign for each.",
+    "noReports": "No reports in this list.",
+    "noPhoto": "No photo",
+    "by": "By {{name}}",
+    "confirm": "নিশ্চিত করুন",
+    "reject": "বাতিল করুন",
+    "createCampaign": "ক্যাম্পেইন তৈরি করুন",
+    "viewCampaign": "View campaign",
+    "cTitle": "Campaign title",
+    "cDate": "Date",
+    "cTime": "Start time",
+    "cMeeting": "Meeting point",
+    "cNeeded": "Volunteers needed",
+    "cNote": "Message to volunteers",
+    "cNotePh": "e.g. Bring gloves. Bags will be provided.",
+    "publishCampaign": "Publish and call volunteers",
+    "campaignsTitle": "ক্যাম্পেইন",
+    "campaignsSub": "Watch volunteers join and finish, then close the campaign.",
+    "noCampaigns": "No campaigns yet. Confirm a report, then create one.",
+    "volunteers": "স্বেচ্ছাসেবী",
+    "noVolunteers": "Nobody has joined yet.",
+    "completeCampaign": "ক্যাম্পেইন সম্পন্ন করুন",
+    "campaignDone": "Completed with {{n}} volunteers",
+    "waitDone": "Available once at least one volunteer marks their part done."
+  },
+  "worker": {
+    "title": "ওয়ার্কার ড্যাশবোর্ড",
+    "sub": "Join clean-up campaigns and mark your tasks done.",
+    "sCalls": "New campaign calls",
+    "sPending": "My pending tasks",
+    "sDone": "Tasks completed",
+    "callsTitle": "স্বেচ্ছাসেবী প্রয়োজন",
+    "noCalls": "No open calls right now. Check back soon.",
+    "activity": "My recent activity",
+    "noActivity": "You have not joined any campaign yet.",
+    "spots": "{{joined}} of {{needed}} volunteers",
+    "thanks": "Campaign completed. Thank you!",
+    "campaignClosed": "This campaign is completed.",
+    "full": "Team is full",
+    "join": "ক্যাম্পেইনে যোগ দিন",
+    "myPartDone": "You marked your part as done",
+    "markDone": "আমার কাজ শেষ",
+    "leave": "ছেড়ে দিন",
+    "campaignsTitle": "ক্যাম্পেইন",
+    "campaignsSub": "All clean-up days organised by the admin.",
+    "tab": {
+      "open": "চলমান",
+      "mine": "আমার ক্যাম্পেইন",
+      "completed": "সম্পন্ন"
+    },
+    "noCampaigns": "Nothing to show here."
+  },
+  "notFound": {
+    "text": "পাতাটি পাওয়া যায়নি।",
+    "back": "হোমে ফিরুন"
+  }
+}
