@@ -1,45 +1,101 @@
-// Mock auth. Replace each function with supabase.auth.* later; keep the return shape { data, error }.
-import { delay, fail, ok, readDb, uid, writeDb } from './mockDb';
 
-const SESSION_KEY = 'nb_session';
-const strip = ({ password, ...user }) => user; // never expose the password
+import { supabase } from '../lib/supabaseClient';
+
+// Convert Supabase profile roles to the roles used by the React app.
+const mapUser = (authUser, profile) => ({
+  id: authUser.id,
+  name: profile?.full_name || authUser.user_metadata?.full_name || authUser.user_metadata?.name || '',
+  email: authUser.email || '',
+  phone: profile?.phone || '',
+  role: profile?.role === 'volunteer' ? 'worker' : profile?.role || 'citizen',
+});
+
+async function getAppUser(authUser) {
+  if (!authUser) return null;
+
+  const { data: profile, error } = await supabase
+    .from('profiles')
+    .select('id, full_name, phone, role')
+    .eq('id', authUser.id)
+    .single();
+
+  if (error) throw error;
+
+  return mapUser(authUser, profile);
+}
 
 export async function getSession() {
-  await delay(100);
-  const id = localStorage.getItem(SESSION_KEY);
-  const user = readDb().users.find((u) => u.id === id);
-  return ok(user ? strip(user) : null);
+  try {
+    const { data: { session }, error } = await supabase.auth.getSession();
+    if (error) throw error;
+
+    return { data: await getAppUser(session?.user), error: null };
+  } catch (error) {
+    return { data: null, error };
+  }
 }
 
 export async function login({ email, password }) {
-  await delay();
-  const user = readDb().users.find((u) => u.email.toLowerCase() === email.trim().toLowerCase());
-  if (!user || user.password !== password) return fail('auth.invalid');
-  localStorage.setItem(SESSION_KEY, user.id);
-  return ok(strip(user));
+  try {
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email: email.trim(),
+      password,
+    });
+
+    if (error) throw error;
+
+    return { data: await getAppUser(data.user), error: null };
+  } catch (error) {
+    return { data: null, error };
+  }
 }
 
-// One-click demo login for each role
-export async function loginAsDemo(role) {
-  await delay(150);
-  const user = readDb().users.find((u) => u.role === role);
-  localStorage.setItem(SESSION_KEY, user.id);
-  return ok(strip(user));
+export async function loginWithGoogle() {
+  return supabase.auth.signInWithOAuth({
+    provider: 'google',
+    options: {
+      redirectTo: window.location.origin,
+    },
+  });
 }
 
 export async function register({ name, email, phone, password, role }) {
-  await delay();
-  const db = readDb();
-  if (db.users.some((u) => u.email.toLowerCase() === email.trim().toLowerCase())) return fail('auth.emailTaken');
-  const user = { id: uid('u'), name: name.trim(), email: email.trim(), phone, password, role };
-  db.users.push(user);
-  writeDb(db);
-  localStorage.setItem(SESSION_KEY, user.id);
-  return ok(strip(user));
+  try {
+    const { data, error } = await supabase.auth.signUp({
+      email: email.trim(),
+      password,
+      options: {
+        data: {
+          full_name: name.trim(),
+          phone: phone.trim(),
+          role: role === 'worker' ? 'volunteer' : 'citizen',
+        },
+      },
+    });
+
+    if (error) throw error;
+
+    if (!data.session) {
+      return {
+        data: null,
+        error: { message: 'Check your email to confirm your registration before logging in.' },
+      };
+    }
+
+    return { data: await getAppUser(data.user), error: null };
+  } catch (error) {
+    return { data: null, error };
+  }
+}
+
+export async function loginAsDemo() {
+  return {
+    data: null,
+    error: { message: 'Demo login is temporarily unavailable.' },
+  };
 }
 
 export async function logout() {
-  await delay(80);
-  localStorage.removeItem(SESSION_KEY);
-  return ok(true);
+  const { error } = await supabase.auth.signOut();
+  return { data: !error, error };
 }
