@@ -1,25 +1,41 @@
 
 import { supabase } from '../lib/supabaseClient';
-
+const PHOTO_BUCKET = 'report-photos';
 // Convert Supabase campaign data into the format used by the existing UI.
 function mapCampaign(campaign) {
   const participants = campaign.campaign_participants || [];
 
+  const report = campaign.reports
+    ? {
+        ...campaign.reports,
+        image: campaign.reports.photo_path
+          ? campaign.reports.photo_path.startsWith('http')
+            ? campaign.reports.photo_path
+            : supabase.storage
+                .from(PHOTO_BUCKET)
+                .getPublicUrl(campaign.reports.photo_path).data.publicUrl
+          : null,
+      }
+    : null;
+
   return {
     id: campaign.id,
     reportId: campaign.report_id,
-    report: campaign.reports || null,
+    report,
     title: campaign.title,
     date: campaign.campaign_date,
     time: campaign.start_time?.slice(0, 5) || '',
     meetingPoint: campaign.meeting_point,
     location: campaign.location_address,
-    area: campaign.reports?.waste_category || '',
+    area: report?.waste_category || '',
     needed: campaign.volunteer_target,
     note: campaign.description || '',
     volunteers: participants
-      .filter((p) => p.participation_status === 'joined' ||
-                     p.participation_status === 'attended')
+      .filter(
+        (p) =>
+          p.participation_status === 'joined' ||
+          p.participation_status === 'attended'
+      )
       .map((p) => p.volunteer_id),
     done: participants
       .filter((p) => p.participation_status === 'attended')
@@ -38,17 +54,19 @@ export async function listCampaigns() {
     volunteer_id,
     participation_status
   ),
-  reports (
-    id,
-    title,
-    description,
-    waste_category,
-    location_address,
-    district,
-    status,
-    created_at
-  )
+reports (
+  id,
+  title,
+  description,
+  waste_category,
+  location_address,
+  district,
+  status,
+  photo_path,
+  created_at
+)
 `)
+
     .order('campaign_date', { ascending: true });
 
   if (error) return { data: null, error };
