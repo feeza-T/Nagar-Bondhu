@@ -1,4 +1,5 @@
 import Hero from '../components/landing/Hero';
+import ProblemSection from '../components/landing/Problemsection';
 import Impact from '../components/landing/Impact';
 import Features from '../components/landing/Features';
 import HowItWorks from '../components/landing/HowItWorks';
@@ -8,5 +9,17 @@ import Testimonials from '../components/landing/Testimonials';
 import CtaBanner from '../components/landing/CtaBanner';
 
 export default function Landing() {
-  return (<><Hero /><Impact /><Features /><HowItWorks /><Services /><Projects /><Testimonials /><CtaBanner /></>);
+  return (
+    <>
+      <Hero />
+      <ProblemSection />
+      <Features />
+      <HowItWorks />
+      <Services />
+      <Projects />
+      <Impact />
+      <Testimonials />
+      <CtaBanner />
+    </>
+  );
 }

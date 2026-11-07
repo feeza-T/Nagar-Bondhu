@@ -13,6 +13,82 @@ import {
 
 import { fmtDate } from '../../../utils/format';
 import StatusBadge from '../../../components/common/StatusBadge';
+import useTranslatedText from '../../../hooks/useTranslatedText';
+
+function TranslatedCampaignContent({ campaign }) {
+  const title = useTranslatedText(campaign.title);
+  const meetingPoint = useTranslatedText(campaign.meetingPoint);
+  const note = useTranslatedText(campaign.note);
+
+  return (
+    <>
+      <p className="mt-2 text-sm text-white/70">{title}</p>
+
+      <div className="rounded-2xl bg-surface p-4 sm:col-span-2">
+        <p className="flex items-center gap-1 text-xs text-ink/50">
+          <MapPin size={13} />
+          Meeting point
+        </p>
+        <p className="mt-1 text-sm font-semibold">{meetingPoint}</p>
+      </div>
+
+      <div className="rounded-2xl bg-surface p-4 sm:col-span-2">
+        <p className="text-xs text-ink/50">Campaign description</p>
+        <p className="mt-1 text-sm leading-6">
+          {note || 'No description provided.'}
+        </p>
+      </div>
+    </>
+  );
+}
+
+function TranslatedReportContent({ report, campaign }) {
+  const title = useTranslatedText(report.title);
+  const location = useTranslatedText(
+    report.location_address || campaign.location
+  );
+  const description = useTranslatedText(report.description);
+  const category = useTranslatedText(report.waste_category);
+  const district = useTranslatedText(report.district);
+
+  return (
+    <>
+      <div className="flex items-start justify-between gap-3">
+        <h4 className="font-bold leading-6">{title}</h4>
+        <StatusBadge status={report.status} />
+      </div>
+
+      <div className="mt-4 grid gap-3 sm:grid-cols-2">
+        <div>
+          <p className="text-xs text-ink/50">Waste category</p>
+          <p className="mt-1 text-sm font-semibold">{category || 'N/A'}</p>
+        </div>
+
+        <div>
+          <p className="text-xs text-ink/50">District</p>
+          <p className="mt-1 text-sm font-semibold">{district || 'N/A'}</p>
+        </div>
+
+        <div className="sm:col-span-2">
+          <p className="flex items-center gap-1 text-xs text-ink/50">
+            <MapPinned size={13} />
+            Report location
+          </p>
+          <p className="mt-1 text-sm font-semibold">{location}</p>
+        </div>
+      </div>
+
+      {report.description && (
+        <div className="mt-4 border-t border-ink/10 pt-3">
+          <p className="text-xs text-ink/50">Report description</p>
+          <p className="mt-1 text-sm leading-6 text-ink/70">
+            {description}
+          </p>
+        </div>
+      )}
+    </>
+  );
+}
 
 export default function CampaignDetailsModal({
   campaign,
@@ -74,15 +150,14 @@ export default function CampaignDetailsModal({
               Campaign Details
             </h2>
 
-            <p className="mt-2 text-sm text-white/70">
-              {campaign.title}
-            </p>
+            <TranslatedCampaignContent campaign={campaign} />
           </div>
         </div>
 
         {/* Scrollable content */}
         <div className="overflow-y-auto p-6">
           <div className="space-y-6">
+
             {/* Status */}
             <div className="flex flex-wrap items-center justify-between gap-3">
               <StatusBadge status={campaign.status} />
@@ -110,25 +185,6 @@ export default function CampaignDetailsModal({
                   <p className="text-xs text-ink/50">Start time</p>
                   <p className="mt-1 text-sm font-semibold">
                     {campaign.time}
-                  </p>
-                </div>
-
-                <div className="rounded-2xl bg-surface p-4 sm:col-span-2">
-                  <p className="flex items-center gap-1 text-xs text-ink/50">
-                    <MapPin size={13} />
-                    Meeting point
-                  </p>
-                  <p className="mt-1 text-sm font-semibold">
-                    {campaign.meetingPoint}
-                  </p>
-                </div>
-
-                <div className="rounded-2xl bg-surface p-4 sm:col-span-2">
-                  <p className="text-xs text-ink/50">
-                    Campaign description
-                  </p>
-                  <p className="mt-1 text-sm leading-6">
-                    {campaign.note || 'No description provided.'}
                   </p>
                 </div>
               </div>
@@ -229,49 +285,10 @@ export default function CampaignDetailsModal({
 
               {campaign.report ? (
                 <div className="rounded-2xl border border-[#174B35]/15 bg-[#174B35]/[0.03] p-4">
-                  <div className="flex items-start justify-between gap-3">
-                    <h4 className="font-bold leading-6">
-                      {campaign.report.title}
-                    </h4>
-                    <StatusBadge status={campaign.report.status} />
-                  </div>
-
-                  <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                    <div>
-                      <p className="text-xs text-ink/50">Waste category</p>
-                      <p className="mt-1 text-sm font-semibold">
-                        {campaign.report.waste_category || 'N/A'}
-                      </p>
-                    </div>
-
-                    <div>
-                      <p className="text-xs text-ink/50">District</p>
-                      <p className="mt-1 text-sm font-semibold">
-                        {campaign.report.district || 'N/A'}
-                      </p>
-                    </div>
-
-                    <div className="sm:col-span-2">
-                      <p className="flex items-center gap-1 text-xs text-ink/50">
-                        <MapPinned size={13} />
-                        Report location
-                      </p>
-                      <p className="mt-1 text-sm font-semibold">
-                        {campaign.report.location_address || campaign.location}
-                      </p>
-                    </div>
-                  </div>
-
-                  {campaign.report.description && (
-                    <div className="mt-4 border-t border-ink/10 pt-3">
-                      <p className="text-xs text-ink/50">
-                        Report description
-                      </p>
-                      <p className="mt-1 text-sm leading-6 text-ink/70">
-                        {campaign.report.description}
-                      </p>
-                    </div>
-                  )}
+                  <TranslatedReportContent
+                    report={campaign.report}
+                    campaign={campaign}
+                  />
 
                   <p className="mt-4 break-all text-[11px] text-ink/40">
                     Report ID: {campaign.reportId}
@@ -291,6 +308,7 @@ export default function CampaignDetailsModal({
             >
               Close Details
             </button>
+
           </div>
         </div>
       </div>

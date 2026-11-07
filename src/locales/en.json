@@ -56,6 +56,47 @@
     "cardText": "Clean city together",
     "chip": "Reports cleaned this week: 214"
   },
+"problem": {
+    "problemBadge": "The problem",
+    "title": "Bangladesh produces more waste per person than India",
+    "text": "A World Bank finding ranks Bangladesh third in South Asia for per-capita waste. Uncollected piles clog drains and spoil the streets we all share.",
+    "source": "World Bank, via TBS · April 25, 2026",
+    "solutionBadge": "The solution",
+    "solutionTitle": "Nagar Bondhu connects citizens with cleaning teams",
+    "solutionText": "Spot waste, report it, and watch your neighbourhood get cleaned, all in one place.",
+    "buildTitle": "What we build",
+    "build": {
+      "report": {
+        "title": "Report in a minute",
+        "text": "Snap a photo and share the location."
+      },
+      "assign": {
+        "title": "Teams get the job",
+        "text": "The task goes to cleaning workers in your area."
+      },
+      "track": {
+        "title": "See it cleaned",
+        "text": "Follow the status until the area is clear."
+      }
+    },
+    "statCampaigns": "Campaigns completed",
+    "statDistricts": "Districts reached",
+    "ctaBtn": "Report waste"
+  },
+  "map": {
+    "aria": "Map of Bangladesh by division. Select a division to see its campaigns.",
+    "hint": "Hover or tap a division to see the campaigns we have done there.",
+    "loading": "Loading campaign data…",
+    "error": "Campaign data is temporarily unavailable.",
+    "campaigns": "Campaigns: {{n}}",
+    "none": "No campaigns in this division yet.",
+    "noneInDistrict": "No campaigns in {{name}} yet.",
+    "status": {
+      "completed": "Completed",
+      "ongoing": "Ongoing",
+      "upcoming": "Upcoming"
+    }
+  },
    "impact": {
     "eyebrow": "Our growing impact",
     "heading1": "Better neighbourhoods,",
