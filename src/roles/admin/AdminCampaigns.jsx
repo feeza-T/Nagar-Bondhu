@@ -21,7 +21,7 @@ import Spinner from '../../components/common/Spinner';
 import StatusBadge from '../../components/common/StatusBadge';
 
 import CampaignDetailsModal from './components/CampaignDetailsModal';
-import CampaignCompletionModal from './components/CampaignModal';
+import CampaignCompletionModal from './components/CampaignCompletionModal';
 
 export default function AdminCampaigns() {
   const { t, i18n } = useTranslation();

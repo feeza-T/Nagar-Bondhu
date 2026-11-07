@@ -140,15 +140,20 @@ export async function createReport(payload, user) {
     const { data, error } = await supabase
       .from('reports')
       .insert({
-        citizen_id: user.id,
-        title: payload.title.trim(),
-        description: payload.description.trim(),
-        waste_category: payload.category,
-        district: payload.area,
-        location_address: payload.location.trim(),
-        photo_path: path,
-        status: 'pending',
-      })
+  citizen_id: user.id,
+  title: payload.title.trim(),
+  description: payload.description.trim(),
+  waste_category: payload.category,
+  district: payload.area,
+  location_address: payload.location.trim(),
+  photo_path: path,
+
+  // Save selected map coordinates
+  latitude: payload.latitude ?? null,
+  longitude: payload.longitude ?? null,
+
+  status: 'pending',
+})
       .select()
       .single();
 

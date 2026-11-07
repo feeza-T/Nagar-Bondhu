@@ -1,7 +1,8 @@
+@import "leaflet/dist/leaflet.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --brand: #F26B21; --clay: #C4501F; --lime: #DDF545; --olive: #5F8A1A;
   --forest: #24402B; --ink: #151515; --surface: #F3F3EE;
@@ -34,4 +35,16 @@ html.bn .uppercase { text-transform: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .animate-float { animation: none; }
+}
+
+/* Keep Leaflet maps below the navigation bar */
+.leaflet-container {
+  position: relative;
+  z-index: 0;
+}
+
+/* Keep the navbar above map layers */
+nav {
+  position: relative;
+  z-index: 1000;
 }
